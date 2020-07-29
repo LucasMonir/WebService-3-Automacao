@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.4.3 (RELEASE-2.4.3-ad3323c; 2019-01-21T17:46:06+0000) JAXWS-RI/2.3.2 JAXWS-API/2.3.2 JAXB-RI/2.3.2 JAXB-API/2.3.2 git-revision#unknown. --><xs:schema xmlns:tns="http://registro/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://registro/">
+
+<xs:element name="deficienciaCount" type="tns:deficienciaCount"/>
+
+<xs:element name="deficienciaCountResponse" type="tns:deficienciaCountResponse"/>
+
+<xs:element name="empregoCount" type="tns:empregoCount"/>
+
+<xs:element name="empregoCountResponse" type="tns:empregoCountResponse"/>
+
+<xs:element name="escolaridadeCount" type="tns:escolaridadeCount"/>
+
+<xs:element name="escolaridadeCountResponse" type="tns:escolaridadeCountResponse"/>
+
+<xs:element name="etniaCount" type="tns:etniaCount"/>
+
+<xs:element name="etniaCountResponse" type="tns:etniaCountResponse"/>
+
+<xs:element name="idadeCount" type="tns:idadeCount"/>
+
+<xs:element name="idadeCountResponse" type="tns:idadeCountResponse"/>
+
+<xs:element name="orientacaoCount" type="tns:orientacaoCount"/>
+
+<xs:element name="orientacaoCountResponse" type="tns:orientacaoCountResponse"/>
+
+<xs:element name="rendaCount" type="tns:rendaCount"/>
+
+<xs:element name="rendaCountResponse" type="tns:rendaCountResponse"/>
+
+<xs:element name="sexoCount" type="tns:sexoCount"/>
+
+<xs:element name="sexoCountResponse" type="tns:sexoCountResponse"/>
+
+<xs:complexType name="idadeCount">
+<xs:sequence>
+<xs:element name="parametroBusca" type="xs:string" minOccurs="0"/>
+<xs:element name="listaDados" type="tns:pessoa" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="pessoa">
+<xs:sequence>
+<xs:element name="nome" type="xs:string" minOccurs="0"/>
+<xs:element name="renda" type="xs:string" minOccurs="0"/>
+<xs:element name="etnia" type="xs:string" minOccurs="0"/>
+<xs:element name="sexo" type="xs:string" minOccurs="0"/>
+<xs:element name="escolaridade" type="xs:string" minOccurs="0"/>
+<xs:element name="idade" type="xs:string" minOccurs="0"/>
+<xs:element name="orientacao" type="xs:string" minOccurs="0"/>
+<xs:element name="emprego" type="xs:string" minOccurs="0"/>
+<xs:element name="deficiencia" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="idadeCountResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deficienciaCount">
+<xs:sequence>
+<xs:element name="parametroBusca" type="xs:string" minOccurs="0"/>
+<xs:element name="listaDados" type="tns:pessoa" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="deficienciaCountResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="empregoCount">
+<xs:sequence>
+<xs:element name="parametroBusca" type="xs:string" minOccurs="0"/>
+<xs:element name="listaDados" type="tns:pessoa" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="empregoCountResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="rendaCount">
+<xs:sequence>
+<xs:element name="parametroBusca" type="xs:string" minOccurs="0"/>
+<xs:element name="listaDados" type="tns:pessoa" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="rendaCountResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="sexoCount">
+<xs:sequence>
+<xs:element name="parametroBusca" type="xs:string" minOccurs="0"/>
+<xs:element name="listaDados" type="tns:pessoa" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="sexoCountResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="orientacaoCount">
+<xs:sequence>
+<xs:element name="parametroBusca" type="xs:string" minOccurs="0"/>
+<xs:element name="listaDados" type="tns:pessoa" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="orientacaoCountResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="etniaCount">
+<xs:sequence>
+<xs:element name="parametroBusca" type="xs:string" minOccurs="0"/>
+<xs:element name="listaDados" type="tns:pessoa" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="etniaCountResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="escolaridadeCount">
+<xs:sequence>
+<xs:element name="parametroBusca" type="xs:string" minOccurs="0"/>
+<xs:element name="listaDados" type="tns:pessoa" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="escolaridadeCountResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
