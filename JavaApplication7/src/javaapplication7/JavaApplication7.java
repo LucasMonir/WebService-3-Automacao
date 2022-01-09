@@ -44,22 +44,21 @@ public class JavaApplication7 {
 
                 case 1:
                     registrar();
-                    op=0;
+                    op = 0;
                 break;
                 
                 case 2:
-                    if(!listaDados.isEmpty()){
+                    if (!listaDados.isEmpty()) {
                         exibe();
                     }else{
                         JOptionPane.showMessageDialog(null, "Erro: Não há registros, retornando ao menu!", "Erro", JOptionPane.ERROR_MESSAGE);               
                     }
-                    op=0;
-                        
+                    op = 0;
                 break;
 
                 case 3:
                     if(!listaDados.isEmpty()){
-                        int op2=Integer.parseInt(JOptionPane.showInputDialog("informe estatística desejada: \n"
+                        int op2 = Integer.parseInt(JOptionPane.showInputDialog("informe estatística desejada: \n"
                         +"1 - Renda \n"
                         +"2 - Etnia \n"
                         +"3 - Sexo \n"
@@ -72,16 +71,16 @@ public class JavaApplication7 {
                     }else{
                         JOptionPane.showMessageDialog(null, "Erro: Não há registros, retornando ao menu!", "Erro", JOptionPane.ERROR_MESSAGE);                        
                     }
-                    op=0;
+                    op = 0;
                 break;
 
                 case 4:
-                    op=5;
+                    op = 5;
                 break;
 
                 default:
                     JOptionPane.showMessageDialog(null, "Erro: Entrada inválida, retornando ao menu!", "Erro", JOptionPane.ERROR_MESSAGE);
-                    op=0;
+                    op = 0;
             }
         }
     }
@@ -168,7 +167,7 @@ public class JavaApplication7 {
         String toString= "============================ \n";
         
         for (Pessoa pessoa : listaDados) {
-           toString+= pessoa.toString() + "\n___________________________ \n";
+           toString += pessoa.toString() + "\n___________________________ \n";
         }
 
         JOptionPane.showMessageDialog(null, toString, "Registrados", JOptionPane.INFORMATION_MESSAGE);
